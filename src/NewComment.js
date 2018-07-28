@@ -22,7 +22,9 @@ class NewComment extends Component {
     render() {
         return(
             <div className='row'>
-                <textarea placeholder='Type here!' ref='comment' className='form-control' onKeyDown={this.handleEnter}/>
+                <div className='col-sm-12'>
+                    <textarea placeholder='Type here!' ref='comment' className='form-control' onKeyDown={this.handleEnter}/>
+                </div>    
             </div>
         )
     }

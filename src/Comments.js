@@ -1,13 +1,14 @@
 import React, { Component } from 'react'
 
+import Comment from './Comment'
+
 class Comments extends Component {
     
-    render() {
-        
+    render() {  
+        const { comments }  = this.props
         return(
-            
-            <div>
-                {(JSON.stringify(this.props.comments))}
+            <div className='row'>
+                {Object.keys(comments).map(index => <Comment comment={comments[index]} key={index} />)}
             </div>
         )
     }
