@@ -13,16 +13,7 @@ class App extends Component {
 
     this.postNewComment = this.postNewComment.bind(this)
 
-    this.state = {
-      comments: {
-        1: {
-          comment: 'first comment'
-        },
-        2: {
-          comment: 'second comment'
-        }
-      }
-    }
+    this.state = {comments: {}}
   }
 
   postNewComment(comment) {
