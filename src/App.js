@@ -3,8 +3,8 @@ import React, { Component } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 import NewComment from './NewComment'
-
 import Comments from './Comments'
+import base from './base'
 
 class App extends Component {
   
@@ -14,6 +14,11 @@ class App extends Component {
     this.postNewComment = this.postNewComment.bind(this)
 
     this.state = {comments: {}}
+
+    this.refComments = base.syncState('comments', {
+      context: this,
+      state: 'comments'
+    })
   }
 
   postNewComment(comment) {
