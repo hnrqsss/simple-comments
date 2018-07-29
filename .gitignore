@@ -22,3 +22,5 @@ yarn-error.log*
 
 # database connection
 /src/base.js
+.firebaserc
+firebase.json

@@ -4,7 +4,6 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 
 import NewComment from './NewComment'
 import Comments from './Comments'
-import base from './base'
 
 class App extends Component {
   
@@ -15,7 +14,7 @@ class App extends Component {
 
     this.state = {comments: {}}
 
-    this.refComments = base.syncState('comments', {
+    this.refComments = this.props.base.syncState('comments', {
       context: this,
       state: 'comments'
     })
