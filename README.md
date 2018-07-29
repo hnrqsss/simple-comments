@@ -5,3 +5,6 @@ The initial idea is have a text area field and when the user write a comment and
 1. Create-react-app
 2. Firebase 
 4. Bootstrap 4
+
+## Link to test
+[Hosted in firebase](https://comments-90825.firebaseapp.com/)
